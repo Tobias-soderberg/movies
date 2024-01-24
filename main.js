@@ -30,10 +30,10 @@ function addMovie() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(newDog),
+    body: JSON.stringify(newMovie),
   }).then((res) => {
     if (res.ok) {
-      getDogs();
+      getMovies();
     } else {
       console.warn("Something is wrong with the API!");
     }
