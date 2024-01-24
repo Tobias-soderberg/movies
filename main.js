@@ -53,8 +53,8 @@ function displayMovies(movies) {
     var html = `
     <div class="sm-col-12 md-col-6 lg-col-4">
         <h1 class="text-center">${movie.title}</h1>
-        <h3>${movie.releaseyear}</h3>
-        <img src="${movie.imagelink}">
+        <h3>${movie.releaseYear}</h3>
+        <img src="${movie.imageLink}">
         <p><span class="bold-text">Id: </span>${movie.id}</p>
         <p><span class="bold-text">Genre: </span>${movie.genre}</p>
 
