@@ -16,16 +16,43 @@
     <div class="header row">
       <h1>Add a movie</h1>
       <label>Id:</label>
-      <input id="id-input" type="number" />
+      <input
+        id="id-input"
+        class="input-box form-control"
+        type="number"
+        placeholder="Id"
+      />
       <label>Title:</label>
-      <input id="name-input" type="text" />
-      <label>Director:</label>
-      <input id="breed-input" type="text" />
-      <label>Release date:</label>
-      <input id="age-input" type="date" />
-      <button id="add-movie-btn">Add movie</button>
+      <input
+        id="title-input"
+        class="input-box form-control"
+        type="text"
+        placeholder="Title"
+      />
+      <label>Genre:</label>
+      <input
+        id="genre-input"
+        class="input-box form-control"
+        type="text"
+        placeholder="Genre"
+      />
+      <label>Release year:</label>
+      <input
+        id="date-input"
+        class="input-box form-control"
+        type="number"
+        placeholder="Release year"
+      />
+      <label>Image URL:</label>
+      <input
+        id="date-input"
+        class="input-box form-control"
+        type="text"
+        placeholder="Image URL"
+      />
+      <button id="add-movie-btn" class="btn btn-primary">Add movie</button>
     </div>
-    <div class="row" id="main-container"></div>
+    <div class="row" id="movies-container"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

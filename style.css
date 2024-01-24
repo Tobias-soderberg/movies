@@ -3,8 +3,16 @@ html body {
   padding: 0px;
 }
 .header {
-  height: 50vh;
+  height: 70vh;
   background-color: blanchedalmond;
   margin: 0px;
-  padding: 10vh;
+  padding: 7vh;
+}
+#add-movie-btn {
+  margin-top: 2vh;
+}
+.input-box {
+}
+.bold-text {
+  font-weight: bold;
 }
