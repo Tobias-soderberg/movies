@@ -1,5 +1,5 @@
 //Change this to your URL:
-var url = "";
+var url = "http://localhost:5174/Moves";
 
 //Selectors
 let moviesContainer = document.querySelector("#movies-container");
@@ -43,7 +43,7 @@ function addMovie() {
 function getMovies() {
   fetch(url)
     .then((res) => res.json())
-    .then((data) => displayDogs(data));
+    .then((data) => displayMovies(data));
 }
 
 function displayMovies(movies) {
