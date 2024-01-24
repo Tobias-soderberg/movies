@@ -21,8 +21,8 @@ function addMovie() {
     id: Number(idInput.value),
     title: titleInput.value,
     genre: genreInput.value,
-    releaseyear: Number(dateInput.value),
-    imagelink: imgInput.value,
+    releaseYear: Number(dateInput.value),
+    imageLink: imgInput.value,
   };
 
   fetch(url, {
