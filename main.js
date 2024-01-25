@@ -109,9 +109,11 @@ function handleUpdate(event) {
   if (
     !window.confirm(
       `Are you sure you want to update the movie with id ${movieId}?`
-    ) &&
-    !validateInputs()
+    )
   ) {
+    return;
+  }
+  if (!validateInputs()) {
     return;
   }
 
@@ -160,8 +162,6 @@ function handleDelete(event) {
     )
   ) {
     return;
-  } else if (!validateInputs()) {
-    return;
   }
 
   // Construct the delete URL
@@ -189,13 +189,13 @@ function handleDelete(event) {
 function validateInputs() {
   // Check if all required fields are filled in
   if (
-    !idInput.value ||
-    !titleInput.value ||
-    !genreInput.value ||
-    !dateInput.value
+    titleInput.value == "" ||
+    genreInput.value == "" ||
+    dateInput.value == 0
   ) {
     // Display an error message on the webpage
     showError("Wrong inputs, check them and try again...");
+
     return false;
   }
 
