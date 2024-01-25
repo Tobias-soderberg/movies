@@ -117,7 +117,7 @@ function handleUpdate(event) {
 
   // Create updated movie object
   let updatedMovieData = {
-    id: Number(idInput.value),
+    id: movieId,
     title: titleInput.value,
     genre: genreInput.value,
     releaseYear: Number(dateInput.value),
@@ -125,7 +125,7 @@ function handleUpdate(event) {
   };
 
   // Construct the update URL
-  const updateUrl = url + "/" + movieId;
+  const updateUrl = url;
 
   // Send a PUT request to update the movie
   fetch(updateUrl, {
@@ -157,9 +157,10 @@ function handleDelete(event) {
   if (
     !window.confirm(
       `Are you sure you want to delete the movie with id ${movieId}?`
-    ) &&
-    !validateInputs()
+    )
   ) {
+    return;
+  } else if (!validateInputs()) {
     return;
   }
 
