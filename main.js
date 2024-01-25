@@ -1,5 +1,5 @@
 // Change this to your API endpoint URL
-var url = "http://localhost:5174/Moves";
+var url = "http://localhost:5174/Movies";
 
 // SELECTORS
 let moviesContainer = document.querySelector("#movies-container");
